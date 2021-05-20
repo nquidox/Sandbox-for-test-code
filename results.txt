@@ -1,0 +1,37 @@
+Python 3.9.5
+[kaw@kDesk pi count]$ time python pi.py 
+Calculating Pi number...
+200000000    3.1415926585894076    2.49999999375e-09
+
+real    0m41,043s
+user    0m41,018s
+sys     0m0,010s
+ 
+
+Python 3.7.10 (51efa818fd9b24f625078c65e8e2f6a5ac24d572, Apr 11 2021, 13:25:22)
+[PyPy 7.3.4 with GCC 10.2.0]
+[kaw@kDesk pi count]$ time pypy3 pi.py 
+Calculating Pi number...
+200000000    3.1415926585894076    2.49999999375e-09
+
+real    0m1,081s
+user    0m1,052s
+sys     0m0,010s
+
+Rust 1.52.1 dev [unoptimized + debuginfo]
+[kaw@kDesk debug]$ time ./pi 
+Calculating Pi number...
+0, 3.1415926585894076, 0.00000000249999999375 
+
+real    0m4,651s
+user    0m4,650s
+sys     0m0,000s 
+
+Rust 1.52.1 release [optimized]
+[kaw@kDesk release]$ time ./pi 
+Calculating Pi number...
+0, 3.1415926585894076, 0.00000000249999999375 
+
+real    0m0,256s
+user    0m0,256s
+sys     0m0,000s
