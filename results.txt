@@ -36,9 +36,16 @@ real    0m0,256s
 user    0m0,256s
 sys     0m0,000s
 
-С++ gcc версия 10.2.0 (GCC) 
+С++ gcc версия 10.2.0 (GCC) debug
 [kaw@kDesk pi count]$ time ./pi_cpp 
 3.14159
 real    0m0,578s
 user    0m0,577s
 sys     0m0,000s
+
+С++ gcc версия 10.2.0 (GCC) release
+[kaw@kDesk build-pi_cpp2-Desktop-Release]$ time ./pi_cpp2 
+3.14159
+real    0m0,254s
+user    0m0,250s
+sys     0m0,004s
