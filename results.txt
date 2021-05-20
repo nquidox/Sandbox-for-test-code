@@ -35,3 +35,10 @@ Calculating Pi number...
 real    0m0,256s
 user    0m0,256s
 sys     0m0,000s
+
+С++ gcc версия 10.2.0 (GCC) 
+[kaw@kDesk pi count]$ time ./pi_cpp 
+3.14159
+real    0m0,578s
+user    0m0,577s
+sys     0m0,000s
